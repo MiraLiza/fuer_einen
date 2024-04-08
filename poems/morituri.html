@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>One Poem a Day</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+    .darker {
+        background-color: #b4b4b4;
+    }
+    .column {
+        padding-left: 2em;
+    float: left;
+    width: 50%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+</head>
+
+<!-- add whitespace? or a header?-->
+
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <h4><b>A Poem A Day</b></h4>
+  </div>
+  <div class="w3-bar-block">
+    <a href="../index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>Home</a> 
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+     <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <!-- <div class="w3-section w3-bottombar w3-padding-16">
+      <span class="w3-margin-right">Filter:</span> 
+      <button class="w3-button w3-black">ALL</button>
+      <button class="w3-button w3-white"><i class="fa fa-diamond w3-margin-right"></i>Design</button>
+      <button class="w3-button w3-white w3-hide-small"><i class="fa fa-photo w3-margin-right"></i>Photos</button>
+      <button class="w3-button w3-white w3-hide-small"><i class="fa fa-map-pin w3-margin-right"></i>Art</button>
+    </div> -->
+    </div>
+  </header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div><br/></div>
+<div class="row">
+<div class="column">
+<div class="date">
+    Else Lasker-Schüler, 1902
+</div>
+
+<div class="title">
+    <h2>Morituri</h2>
+</div>
+
+<div>
+    <p>
+    Du hast ein dunkles Lied mit meinem Blut geschrieben,<br/>
+    Seitdem ist meine Seele jubellahm.<br/>
+    Du hast mich aus dem Rosenparadies vertrieben,<br/>
+    Ich musst sie lassen, Alle, die mich lieben.<br/>
+    Gleich einem Vagabund jagt mich der Gram.<br/>
+</p>
+<p>
+    Und in den Nächten, wenn die Rosen singen,<br/>
+Dann brütet still der Tod - ich weiss nicht was -<br/>
+Ich möchte Dir mein wehes Herze bringen,<br/>
+Den bangen Zweifel und mein müh'sam Ringen<br/>
+Und alles Kranke und den Hass! <br/>
+</p>
+</div>
+<div class="source">
+    „Morituri“. Else Lasker-Schüler: Styx. 
+</div>
+</div>
+<div class="column">
+    <div class="date">
+    Translated by Miriam Sibitz, 2024
+</div>
+<div class="title">
+    <h2>Morituri</h2>
+</div>
+<div>
+    <p>
+With my blood you have written a dark song,<br/>
+since then my soul’s lost reason to rejoice.<br/>
+You’ve exiled me from Rose’s Paradise, headlong,<br/>
+I had to leave, all those, where I belong.<br/>
+Now, restlessly, am haunted by Grief’s voice.<br/>
+</p>
+<p>
+And then at night, when roses sing,<br/>
+Death statuesquely broods – I do not know –<br/>
+To you, my aching heart I want to bring,<br/>
+My arduous struggle and anxious misgiving<br/>
+And all that’s diseased and the hatred.<br/>
+</p>
+</div>
+</div>
+</div>
+
+
+<script>
+    // Script to open and close sidebar
+    function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+    }
+     
+    function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+    }
+    </script>
+</body>
+</html>
