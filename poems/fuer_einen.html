@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>One Poem a Day</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+    .darker {
+        background-color: #b4b4b4;
+    }
+    .column {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+</head>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="/w3images/avatar_g2.jpg" style="width:45%;" class="w3-round"><br><br>
+    <h4><b>A Poem A Day</b></h4>
+  </div>
+  <div class="w3-bar-block">
+    <a href="../index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>Home</a> 
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <!-- <div class="w3-section w3-bottombar w3-padding-16">
+      <span class="w3-margin-right">Filter:</span> 
+      <button class="w3-button w3-black">ALL</button>
+      <button class="w3-button w3-white"><i class="fa fa-diamond w3-margin-right"></i>Design</button>
+      <button class="w3-button w3-white w3-hide-small"><i class="fa fa-photo w3-margin-right"></i>Photos</button>
+      <button class="w3-button w3-white w3-hide-small"><i class="fa fa-map-pin w3-margin-right"></i>Art</button>
+    </div> -->
+    </div>
+  </header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+
+<div class="row">
+<div class="column">
+<div class="date">
+    Mascha Kaléko, 1934
+</div>
+
+<div class="title">
+    <h2>Für Einen</h2>
+</div>
+
+<div>
+    <p>
+Die Andern sind das weite Meer.<br/>
+Du aber bist der Hafen.<br/>
+So glaube mir: kannst ruhig schlafen,<br/>
+Ich steure immer wieder her.<br/>
+</p>
+
+<p>
+Denn all die Stürme, die mich trafen,<br/>
+Sie ließen meine Segel leer.<br/>
+Die Andern sind das bunte Meer,<br/>
+Du aber bist der Hafen,<br/>
+</p>
+<p>
+Du bist der Leuchtturm. Letztes Ziel.<br/>
+Kannst Liebster, ruhig schlafen.<br/>
+Die Andern … das ist Wellenspiel,<br/>
+</p>
+<p>
+Du aber bist der Hafen.
+</p>
+</div>
+<div class="source">
+    „Für Einen“. Mascha Kaléko: Das lyrische Stenogrammheft. Erschienen 1956 im Rowohlt Taschenbuch Verlag, Reinbek. © 2015 dtv Verlagsgesellschaft, München.
+</div>
+</div>
+<div class="column">
+    <div class="date">
+    Translated by Miriam Sibitz, 2024
+</div>
+<div class="title">
+    <h2>For Someone</h2>
+</div>
+<div>
+    <p>
+    The others are the open sea. <br/>
+You, however, are the haven. <br/>
+So believe me: you can sleep calmly,<br/> 
+I steer back, again and again. <br/>
+</p>
+<p>
+'Cause all the storms, that hit me, <br/>
+They left my sails empty. <br/>
+The others are the loud sea, <br/>
+You, however, are the haven. <br/>
+</p>
+<p>
+You are the lighthouse. Last stop.<br/> 
+My love, you may sleep calmly. <br/>
+The others... frolicking waves.<br/>
+</p>
+<p>
+You, however, are the haven. 
+</p></div>
+</div>
+</div>
+
+<!-- color change or somehow else mark a change maybe black or dark grey for picture -->
+<div class="darker">
+<div class="w3-center">
+    <br/>
+    <p>Dota Kehr and Max Prosa vertonen dieses Gedicht auf wundervolle Art und Weise: 
+    <br/>
+</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/E1qx5XlgK3k?si=oqvihVZuVCIkeR86" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+</div>
+
+<script>
+    // Script to open and close sidebar
+    function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+    }
+     
+    function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+    }
+    </script>
+</body>
+</html>
